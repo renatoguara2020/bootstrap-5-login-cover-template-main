@@ -2,6 +2,7 @@
 $database = "AdventureWorks";  
 $server = "(local)";  
 $conn = new PDO("sqlsrv:server=$server ; Database = $database", "", "");  
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   
 $contact = "Sales Agent";  
 $stmt = $conn->prepare("select * from Person.ContactType where name = ?");  
