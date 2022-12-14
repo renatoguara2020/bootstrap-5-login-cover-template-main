@@ -8,6 +8,8 @@
     exit("Access Denied: Username and password required."); 
   } else{
 
+
+    
     echo("Usuario Logado");
   }
 ?>
